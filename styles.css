@@ -3,8 +3,8 @@
   font-family: "Inter", sans-serif;
   font-size: 62.5%;
   --main-blue: #5599ff;
-  --secondary-blue: #cbebfd;
-  --dark-gray: #333;
+  --secondary-blue: #bbd5ff;
+  --charcoal: #333;
 }
 
 *,
@@ -16,8 +16,15 @@
 }
 
 body {
-  min-height: 100vh;
+  background-color: white;
+  color: var(--charcoal);
 }
+
+.container {
+  max-width: 120rem;
+  margin: 0 auto;
+}
+
 /* HEADER */
 #header {
   padding: 1rem 8rem;
@@ -25,7 +32,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: var(--secondary-blue);
+  background-color: white;
 }
 
 #header-img {
@@ -65,7 +72,13 @@ body {
 
 /* HERO SECTION */
 .section-hero {
-  background: url(imgs/hero-img.jpg);
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.3) 0%,
+      rgba(0, 0, 0, 0.3) 100%
+    ),
+    url(imgs/hero-img.jpg);
+  color: white;
   background-size: cover;
   background-position: center;
   height: calc(100vh - 8rem);
@@ -77,9 +90,8 @@ body {
 }
 
 .hero-container {
-  color: var(--dark-gray);
   max-width: 70rem;
-  margin-right: 20%;
+  margin-right: 30%;
   margin-bottom: 10%;
   display: flex;
   flex-direction: column;
@@ -87,9 +99,9 @@ body {
   gap: 2rem;
 }
 
-.primary-heading {
+.heading-primary {
   font-size: 6.2em;
-  line-height: 1.2;
+  line-height: 1.15;
 }
 
 .hero-description {
@@ -109,11 +121,11 @@ label[for="email"] {
 }
 
 #email {
-  background-color: var(--secondary-blue);
+  background-color: white;
   color: black;
   font-family: inherit;
-  font-size: 1.6rem;
-  padding: 1.8rem 2rem;
+  font-size: 1.8rem;
+  padding: 1.4rem 2rem;
   border-radius: 2rem;
   border: none;
   outline: none;
@@ -122,13 +134,63 @@ label[for="email"] {
 #submit {
   background-color: var(--main-blue);
   color: white;
-  display: block;
-  font-family: inherit;
+
   font-size: 1.8rem;
   font-weight: 700;
-  text-transform: uppercase;
   letter-spacing: 1px;
-  border: none;
   border-radius: 2rem;
-  padding: 1.8rem 4rem;
+  padding: 1.4rem 4rem;
+  border: 3px solid white;
+
+  display: block;
+  font-family: inherit;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+/* FEATURES */
+.section-features {
+  padding: 9rem;
+}
+
+.features {
+  display: grid;
+  grid-template-columns: auto auto;
+  align-items: center;
+  column-gap: 4rem;
+  row-gap: 6rem;
+  justify-content: center;
+}
+
+.feature > .heading-secondary {
+  font-size: 2.8rem;
+  margin-bottom: 0.8rem;
+}
+
+.fa-seedling,
+.fa-heart-pulse,
+.fa-truck-fast {
+  color: var(--main-blue);
+  margin: 0 auto;
+  font-size: 6rem;
+}
+
+.feature-desc {
+  font-size: 1.8rem;
+  max-width: 75ch;
+}
+
+.fa-seedling {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.fa-heart-pulse {
+  grid-column: 1;
+  grid-row: 2;
+}
+
+.fa-truck-fast {
+  grid-column: 1;
+  grid-row: 3;
 }
