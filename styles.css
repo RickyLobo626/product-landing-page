@@ -2,6 +2,9 @@
   box-sizing: border-box;
   font-family: "Inter", sans-serif;
   font-size: 62.5%;
+  --main-blue: #5599ff;
+  --secondary-blue: #cbebfd;
+  --dark-gray: #333;
 }
 
 *,
@@ -10,4 +13,122 @@
   margin: 0;
   padding: 0;
   box-sizing: inherit;
+}
+
+body {
+  min-height: 100vh;
+}
+/* HEADER */
+#header {
+  padding: 1rem 8rem;
+  height: 8rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--secondary-blue);
+}
+
+#header-img {
+  height: 100%;
+  margin-bottom: 1rem;
+}
+
+#nav-bar {
+  width: max(25vw, 35rem);
+  font-size: 1.6rem;
+}
+
+.link-list {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-link {
+  color: black;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+.nav-link:link,
+.nav-link:visited {
+  text-decoration: none;
+}
+
+.nav-link:hover,
+.nav-link:active {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  text-decoration-thickness: 2px;
+}
+
+/* HERO SECTION */
+.section-hero {
+  background: url(imgs/hero-img.jpg);
+  background-size: cover;
+  background-position: center;
+  height: calc(100vh - 8rem);
+  min-height: 50rem;
+  padding: 8rem;
+
+  display: flex;
+  justify-content: center;
+}
+
+.hero-container {
+  color: var(--dark-gray);
+  max-width: 70rem;
+  margin-right: 20%;
+  margin-bottom: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.primary-heading {
+  font-size: 6.2em;
+  line-height: 1.2;
+}
+
+.hero-description {
+  font-size: 2rem;
+  line-height: 1.5;
+  margin-bottom: 2rem;
+}
+
+#form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+label[for="email"] {
+  display: none;
+}
+
+#email {
+  background-color: var(--secondary-blue);
+  color: black;
+  font-family: inherit;
+  font-size: 1.6rem;
+  padding: 1.8rem 2rem;
+  border-radius: 2rem;
+  border: none;
+  outline: none;
+}
+
+#submit {
+  background-color: var(--main-blue);
+  color: white;
+  display: block;
+  font-family: inherit;
+  font-size: 1.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border: none;
+  border-radius: 2rem;
+  padding: 1.8rem 4rem;
 }
