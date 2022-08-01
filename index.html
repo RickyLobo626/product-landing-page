@@ -54,7 +54,7 @@
               placeholder="lobo@mymail.com"
               required
             />
-            <input id="submit" type="submit" value="Get Started" />
+            <input id="submit" class="btn" type="submit" value="Get Started" />
           </form>
         </div>
       </section>
@@ -69,7 +69,7 @@
             </p>
           </div>
           <div class="feature">
-            <h2 class="heading-secondary">Healthy</h2>
+            <h2 class="heading-secondary">Healthy Whales</h2>
             <p class="feature-desc">
               Lorem ipsum dolor sit amet consectetur, adipisicing elit.
               Necessitatibus et ducimus est.
@@ -89,12 +89,44 @@
         </div>
       </section>
       <section class="section-how">
-        <iframe src="" frameborder="0"></iframe>
+        <div class="container">
+          <iframe
+            id="video"
+            src="https://www.youtube.com/embed/EvtMTV9mMSc"
+            title="The Best Whale Moments Captured on Film | Top 5 | BBC Earth"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
       </section>
       <section class="section-pricing">
-        <div class="product"></div>
-        <div class="product"></div>
-        <div class="product"></div>
+        <div class="products-grid container">
+          <div class="product">
+            <div class="image-container">
+              <img src="imgs/dolphin.jpg" alt="Dolphin" class="product-image" />
+            </div>
+            <p class="product-name">Dolphin</p>
+            <h3 class="price">5,000€</h3>
+            <button class="btn btn--product">Select</button>
+          </div>
+          <div class="product">
+            <div class="image-container">
+              <img src="imgs/orca.jpg" alt="Orca" class="product-image" />
+            </div>
+            <p class="product-name">Orca</p>
+            <h3 class="price">250,000€</h3>
+            <button class="btn btn--product">Select</button>
+          </div>
+          <div class="product">
+            <div class="image-container">
+              <img src="imgs/whale.jpg" alt="Whale" class="product-image" />
+            </div>
+            <p class="product-name">Blue Whale</p>
+            <h3 class="price">1,500,000€</h3>
+            <button class="btn btn--product">Select</button>
+          </div>
+        </div>
       </section>
     </main>
     <footer>

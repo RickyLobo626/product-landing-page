@@ -20,9 +20,28 @@ body {
   color: var(--charcoal);
 }
 
+section {
+  margin-bottom: 9rem;
+  padding: 0 4rem;
+}
+
 .container {
   max-width: 120rem;
   margin: 0 auto;
+}
+
+.btn {
+  background-color: var(--main-blue);
+  color: white;
+  font-size: 1.8rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  border-radius: 15rem;
+
+  display: block;
+  font-family: inherit;
+  cursor: pointer;
+  text-transform: uppercase;
 }
 
 /* HEADER */
@@ -42,7 +61,7 @@ body {
 
 #nav-bar {
   width: max(25vw, 35rem);
-  font-size: 1.6rem;
+  font-size: 1.8rem;
 }
 
 .link-list {
@@ -126,32 +145,17 @@ label[for="email"] {
   font-family: inherit;
   font-size: 1.8rem;
   padding: 1.4rem 2rem;
-  border-radius: 2rem;
+  border-radius: 15rem;
   border: none;
   outline: none;
 }
 
 #submit {
-  background-color: var(--main-blue);
-  color: white;
-
-  font-size: 1.8rem;
-  font-weight: 700;
-  letter-spacing: 1px;
-  border-radius: 2rem;
-  padding: 1.4rem 4rem;
   border: 3px solid white;
-
-  display: block;
-  font-family: inherit;
-  cursor: pointer;
-  text-transform: uppercase;
+  padding: 1.4rem 4rem;
 }
 
 /* FEATURES */
-.section-features {
-  padding: 9rem;
-}
 
 .features {
   display: grid;
@@ -193,4 +197,66 @@ label[for="email"] {
 .fa-truck-fast {
   grid-column: 1;
   grid-row: 3;
+}
+
+/* HOW IT WORKS */
+.section-how {
+  padding: 0;
+}
+
+.section-how > .container {
+  display: flex;
+  justify-content: center;
+}
+
+#video {
+  width: 640px;
+  height: 360px;
+}
+
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 2rem;
+}
+
+.image-container {
+  overflow: hidden;
+  height: 100%;
+}
+
+.product {
+  overflow: hidden;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.4rem;
+}
+
+.product-image {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  transition: all 1s;
+  opacity: 0.85;
+}
+
+.product-image:hover {
+  transform: scale(120%);
+  opacity: 1;
+}
+
+.product-name {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.btn--product {
+  border: none;
+  padding: 1rem 5rem;
+}
+
+.price {
+  font-size: 2rem;
 }
