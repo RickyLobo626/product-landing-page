@@ -45,7 +45,7 @@ section {
 }
 
 .link {
-  color: black;
+  color: inherit;
   font-weight: 500;
   letter-spacing: 1px;
 }
@@ -75,6 +75,7 @@ section {
   align-items: center;
 
   position: fixed;
+  z-index: 999;
 }
 
 #header-img {
@@ -92,6 +93,23 @@ section {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.btn--mobile {
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-size: 4rem;
+  color: var(--main-blue);
+  display: none;
+}
+
+.btn--mobile > .fa-bars {
+  display: flex;
+  align-items: center;
+}
+
+.btn--mobile > .fa-bars::before {
 }
 
 /* HERO SECTION */
@@ -135,6 +153,7 @@ section {
 }
 
 #form {
+  max-width: 80%;
   display: flex;
   flex-wrap: wrap;
   gap: 2rem;
@@ -145,11 +164,12 @@ label[for="email"] {
 }
 
 #email {
+  max-width: 50%;
   background-color: white;
   color: black;
   font-family: inherit;
   font-size: 1.8rem;
-  padding: 1.7rem 2rem;
+  padding: 1.7rem 2.4rem;
   border-radius: 15rem;
   border: none;
   outline: none;
@@ -160,13 +180,14 @@ label[for="email"] {
 }
 
 #submit {
+  max-width: 50%;
   border: 3px solid white;
   padding: 1.4rem 4rem;
 }
 
 /* FEATURES */
 
-.features {
+.features-grid {
   display: grid;
   grid-template-columns: auto auto;
   align-items: center;
@@ -190,6 +211,7 @@ label[for="email"] {
 
 .feature-desc {
   font-size: 1.8rem;
+  line-height: 1.5;
   max-width: 75ch;
 }
 
@@ -278,6 +300,7 @@ label[for="email"] {
 
   display: flex;
   justify-content: space-between;
+  gap: 1rem;
 }
 
 .footer-links {
