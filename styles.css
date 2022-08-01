@@ -44,6 +44,24 @@ section {
   text-transform: uppercase;
 }
 
+.link {
+  color: black;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+.link:link,
+.link:visited {
+  text-decoration: none;
+}
+
+.link:hover,
+.link:active {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  text-decoration-thickness: 2px;
+}
+
 /* HEADER */
 #header {
   padding: 1rem 8rem;
@@ -64,29 +82,11 @@ section {
   font-size: 1.8rem;
 }
 
-.link-list {
-  list-style-type: none;
+.nav-links {
+  list-style: none;
   display: flex;
   align-items: center;
   justify-content: space-between;
-}
-
-.nav-link {
-  color: black;
-  font-weight: 500;
-  letter-spacing: 1px;
-}
-
-.nav-link:link,
-.nav-link:visited {
-  text-decoration: none;
-}
-
-.nav-link:hover,
-.nav-link:active {
-  text-decoration: underline;
-  text-underline-offset: 4px;
-  text-decoration-thickness: 2px;
 }
 
 /* HERO SECTION */
@@ -148,6 +148,10 @@ label[for="email"] {
   border-radius: 15rem;
   border: none;
   outline: none;
+}
+
+#email::placeholder {
+  opacity: 0.5;
 }
 
 #submit {
@@ -214,6 +218,7 @@ label[for="email"] {
   height: 360px;
 }
 
+/* PRICING */
 .products-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -259,4 +264,24 @@ label[for="email"] {
 
 .price {
   font-size: 2rem;
+}
+
+/* FOOTER */
+.footer {
+  margin-bottom: 0;
+  padding: 2rem 4rem;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-links {
+  font-size: 1.6rem;
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+.copyright {
+  font-size: 1.5rem;
 }
