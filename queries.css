@@ -1,0 +1,11 @@
+/* max-width: 1200px */
+@media (max-width: 75em) {
+  .hero-container {
+    max-width: 55rem;
+  }
+
+  .heading-primary {
+    font-size: 5.2em;
+    line-height: 1.15;
+  }
+}

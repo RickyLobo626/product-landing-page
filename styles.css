@@ -64,12 +64,17 @@ section {
 
 /* HEADER */
 #header {
-  padding: 1rem 8rem;
   height: 8rem;
+  width: 100%;
+  background-color: white;
+  padding: 1rem 8rem;
+  border-bottom: 1px solid #ddd;
+
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: white;
+
+  position: fixed;
 }
 
 #header-img {
@@ -100,7 +105,7 @@ section {
   color: white;
   background-size: cover;
   background-position: center;
-  height: calc(100vh - 8rem);
+  height: 100vh;
   min-height: 50rem;
   padding: 8rem;
 
@@ -144,7 +149,7 @@ label[for="email"] {
   color: black;
   font-family: inherit;
   font-size: 1.8rem;
-  padding: 1.4rem 2rem;
+  padding: 1.7rem 2rem;
   border-radius: 15rem;
   border: none;
   outline: none;
