@@ -18,6 +18,7 @@
 body {
   background-color: white;
   color: var(--charcoal);
+  min-width: 27rem;
 }
 
 section {
@@ -73,14 +74,13 @@ section {
   display: flex;
   justify-content: space-between;
   align-items: center;
-
+  gap: 2rem;
   position: fixed;
   z-index: 999;
 }
 
 #header-img {
   height: 100%;
-  margin-bottom: 1rem;
 }
 
 #nav-bar {
@@ -99,7 +99,7 @@ section {
   border: none;
   background: none;
   cursor: pointer;
-  font-size: 4rem;
+  font-size: 3rem;
   color: var(--main-blue);
   display: none;
 }
@@ -107,9 +107,6 @@ section {
 .btn--mobile > .fa-bars {
   display: flex;
   align-items: center;
-}
-
-.btn--mobile > .fa-bars::before {
 }
 
 /* HERO SECTION */
@@ -123,8 +120,7 @@ section {
   color: white;
   background-size: cover;
   background-position: center;
-  height: 100vh;
-  min-height: 50rem;
+  min-height: 100vh;
   padding: 8rem;
 
   display: flex;
@@ -132,6 +128,7 @@ section {
 }
 
 .hero-container {
+  min-width: 20rem;
   max-width: 70rem;
   margin-right: 30%;
   margin-bottom: 10%;
@@ -144,6 +141,7 @@ section {
 .heading-primary {
   font-size: 6.2em;
   line-height: 1.15;
+  max-width: 20ch;
 }
 
 .hero-description {
@@ -153,7 +151,6 @@ section {
 }
 
 #form {
-  max-width: 80%;
   display: flex;
   flex-wrap: wrap;
   gap: 2rem;
@@ -164,7 +161,7 @@ label[for="email"] {
 }
 
 #email {
-  max-width: 50%;
+  min-width: 25rem;
   background-color: white;
   color: black;
   font-family: inherit;
@@ -180,7 +177,7 @@ label[for="email"] {
 }
 
 #submit {
-  max-width: 50%;
+  min-width: 25rem;
   border: 3px solid white;
   padding: 1.4rem 4rem;
 }
@@ -216,16 +213,19 @@ label[for="email"] {
 }
 
 .fa-seedling {
+  width: 100%;
   grid-column: 1;
   grid-row: 1;
 }
 
 .fa-heart-pulse {
+  width: 100%;
   grid-column: 1;
   grid-row: 2;
 }
 
 .fa-truck-fast {
+  width: 100%;
   grid-column: 1;
   grid-row: 3;
 }
@@ -241,6 +241,7 @@ label[for="email"] {
 }
 
 #video {
+  max-width: 100%;
   width: 640px;
   height: 360px;
 }
@@ -263,7 +264,7 @@ label[for="email"] {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 1.4rem;
+  gap: 1rem;
 }
 
 .product-image {
@@ -272,6 +273,8 @@ label[for="email"] {
   background-size: cover;
   transition: all 1s;
   opacity: 0.85;
+
+  cursor: pointer;
 }
 
 .product-image:hover {
@@ -282,11 +285,8 @@ label[for="email"] {
 .product-name {
   font-size: 2rem;
   font-weight: 500;
-}
-
-.btn--product {
-  border: none;
-  padding: 1rem 5rem;
+  text-align: center;
+  margin-bottom: 1rem;
 }
 
 .price {
@@ -300,7 +300,8 @@ label[for="email"] {
 
   display: flex;
   justify-content: space-between;
-  gap: 1rem;
+  gap: 2rem;
+  width: 100%;
 }
 
 .footer-links {
