@@ -1,3 +1,4 @@
+/* GENERAl */
 :root {
   box-sizing: border-box;
   font-family: "Inter", sans-serif;
@@ -182,7 +183,7 @@ label[for="email"] {
   padding: 1.4rem 4rem;
 }
 
-/* FEATURES */
+/* FEATURES SECTION */
 
 .features-grid {
   display: grid;
@@ -230,7 +231,7 @@ label[for="email"] {
   grid-row: 3;
 }
 
-/* HOW IT WORKS */
+/* HOW IT WORKS SECTION */
 .section-how {
   padding: 0;
 }
@@ -246,7 +247,7 @@ label[for="email"] {
   height: 360px;
 }
 
-/* PRICING */
+/* PRICING SECTION */
 .products-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);

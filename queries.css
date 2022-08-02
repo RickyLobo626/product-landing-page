@@ -1,6 +1,5 @@
 /* max-width: 1200px */
 @media (max-width: 75em) {
-  /* HERO SECTION */
   .hero-container {
     max-width: 55rem;
   }
