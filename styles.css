@@ -3,6 +3,7 @@
   box-sizing: border-box;
   font-family: "Inter", sans-serif;
   font-size: 62.5%;
+  scroll-behavior: smooth;
   --main-blue: #5599ff;
   --secondary-blue: #bbd5ff;
   --charcoal: #333;
