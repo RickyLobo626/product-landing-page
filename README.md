@@ -7,4 +7,4 @@ Skills used for this project:
 - HTML<br>
 - CSS (Flexbox and Grid)<br>
 
-<a href="hhttps://rickylobo626.github.io/product-landing-page/">Live Preview</a>
+<a href="https://rickylobo626.github.io/product-landing-page/">Live Preview</a>
