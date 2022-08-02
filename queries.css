@@ -73,10 +73,6 @@
     font-size: 1.6rem;
   }
 
-  .section-pricing {
-    padding: 0 2rem;
-  }
-
   .products-grid {
     grid-template-columns: 1fr;
     row-gap: 4rem;
@@ -97,8 +93,12 @@
 
 /* max-width: 580px */
 @media (max-width: 36.25em) {
-  #header-img {
-    height: 60%;
+  .container:not(.footer) {
+    padding: 0 2rem;
+  }
+
+  #header {
+    padding: 2rem;
   }
 
   .heading-primary {

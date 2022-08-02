@@ -25,12 +25,12 @@ body {
 
 section {
   margin-bottom: 9rem;
-  padding: 0 4rem;
 }
 
 .container {
   max-width: 120rem;
   margin: 0 auto;
+  padding: 0 4rem;
 }
 
 .btn {
@@ -233,13 +233,10 @@ label[for="email"] {
 }
 
 /* HOW IT WORKS SECTION */
-.section-how {
-  padding: 0;
-}
-
 .section-how > .container {
   display: flex;
   justify-content: center;
+  padding: 0;
 }
 
 #video {
