@@ -93,8 +93,8 @@
 
 /* max-width: 580px */
 @media (max-width: 36.25em) {
-  .container:not(.footer) {
-    padding: 0 2rem;
+  section {
+    padding: 6rem 2rem;
   }
 
   #header {
