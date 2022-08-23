@@ -3,7 +3,6 @@
   box-sizing: border-box;
   font-family: "Inter", sans-serif;
   font-size: 62.5%;
-  scroll-behavior: smooth;
   --main-blue: #5599ff;
   --secondary-blue: #bbd5ff;
   --charcoal: #333;
@@ -24,13 +23,12 @@ body {
 }
 
 section {
-  margin-bottom: 9rem;
+  padding: 9rem 4rem;
 }
 
 .container {
   max-width: 120rem;
   margin: 0 auto;
-  padding: 0 4rem;
 }
 
 .btn {
