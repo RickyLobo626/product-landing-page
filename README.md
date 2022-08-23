@@ -5,6 +5,7 @@ freeCodeCamp (Responsive Web Design Curriculum) - Product Landing Page
 Skills used for this project:
 
 - HTML<br>
-- CSS (Flexbox and Grid)<br>
+- CSS (Flexbox and CSS Grid)<br>
+- JavaScript (For smooth scrolling)<br>
 
 <a href="https://rickylobo626.github.io/product-landing-page/">Live Preview</a>
