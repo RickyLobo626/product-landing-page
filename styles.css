@@ -63,6 +63,11 @@ section {
   text-decoration-thickness: 2px;
 }
 
+.btn:hover {
+  background-color: white;
+  color: var(--main-blue);
+}
+
 /* HEADER */
 #header {
   height: 8rem;
@@ -110,7 +115,7 @@ section {
 }
 
 /* HERO SECTION */
-.section-hero {
+#hero {
   background-image: linear-gradient(
       to bottom,
       rgba(0, 0, 0, 0.3) 0%,
@@ -231,7 +236,7 @@ label[for="email"] {
 }
 
 /* HOW IT WORKS SECTION */
-.section-how > .container {
+#how > .container {
   display: flex;
   justify-content: center;
   padding: 0;
@@ -241,6 +246,7 @@ label[for="email"] {
   max-width: 100%;
   width: 640px;
   height: 360px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
 /* PRICING SECTION */
@@ -253,11 +259,10 @@ label[for="email"] {
 .image-container {
   overflow: hidden;
   height: 100%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
 .product {
-  overflow: hidden;
-
   display: flex;
   flex-direction: column;
   align-items: center;
