@@ -26,6 +26,15 @@ section {
   padding: 9rem 4rem;
 }
 
+section:not(#hero) {
+  transition: all 2s;
+}
+
+.section-hidden {
+  opacity: 0;
+  transform: translateY(7rem);
+}
+
 .container {
   max-width: 120rem;
   margin: 0 auto;
