@@ -6,6 +6,6 @@ Skills used for this project:
 
 - HTML<br>
 - CSS (Flexbox and CSS Grid)<br>
-- JavaScript (For smooth scrolling)<br>
+- JavaScript (Smooth scrolling and scrolling animation)<br>
 
 <a href="https://rickylobo626.github.io/product-landing-page/">Live Preview</a>
